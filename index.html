@@ -3,13 +3,20 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1>Generate a</h1>
-        <h1>random password</h1>
-        <p>Never use an insecure password again.</p>
-        <button onclick="getPassword()">Generate Password</button>
-        <div>
-            <button id="password-one"></button>
-            <button id="password-two"></button>
+        <div id="container">
+            <h1 id="phrase1">Generate a</h1>
+            <h1 id="phrase2">random password</h1>
+            <p id="subphrase">Never use an insecure password again.</p>
+            <button id="generatePasswordBtn" onclick="getPassword()">Generate Passwords</button>
+            <div id="middle-line"></div>
+            <div>
+                <button id="password-one" onclick="copyToClipboard(this.id)"></button>
+                <button id="password-two" onclick="copyToClipboard(this.id)"></button>
+            </div>
+        </div>
+        <div id="notification" style="display: none; position: fixed; top: 20px; right: 20px; 
+            background-color: #55F991; color: #273549; 
+            padding: 10px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
         </div>
         <script src="index.js"></script>
     </body>

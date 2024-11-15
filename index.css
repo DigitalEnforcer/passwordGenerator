@@ -1,3 +1,95 @@
 body {
     margin: 0;
+    background-color: #1F2937;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#phrase1 {
+    padding-top: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+    
+}
+
+#container{
+    width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    padding-left: 30px;
+}
+
+#phrase2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #4ADF86;
+    line-height: 0;
+    margin-left: 10px;
+}
+
+#subphrase{
+    font-size: 22px;
+    color: #D5D4D8;
+    font-weight:lighter;
+    margin-left: 10px;
+}
+
+#generatePasswordBtn{
+    background-color: #10B981;
+    color: #FFFFFF;
+    border-radius: 5px;
+    width: 180px;
+    height: 42px;
+    margin-left: 10px;
+    font-size: 16px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+#middle-line{
+    width: 500px;
+    height: 1px;
+    background-color: #2F3E53;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+#password-one{
+    background-color: #273549 ;
+    color: #55F991;
+    font-size: 16px;
+    width: 211px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    margin: 12px;
+    transition: background-color 0.2s, transform 0.1s;;
+}
+
+#password-one:hover{
+    background-color:#3b4b63; 
+}
+
+#password-two:hover{
+    background-color:#3b4b63; 
+}
+
+#password-two:active{
+    transform: scale(0.98)
+}
+
+#password-one:active{
+    transform: scale(0.98)
+}
+#password-two{
+    background-color: #273549 ;
+    color: #55F991;
+    font-size: 16px;
+    width: 211px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    margin: 12px;
+    transition: background-color 0.2s, transform 0.1s;
 }

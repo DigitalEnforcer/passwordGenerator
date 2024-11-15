@@ -11,8 +11,6 @@ function getPassword(){
     passwordTwo = passwordGenerator()
     passwordBtn1.textContent = passwordOne
     passwordBtn2.textContent = passwordTwo
-    console.log(passwordOne)
-    console.log(passwordTwo)
 }
 function passwordGenerator(){
     let password = ""
@@ -22,5 +20,28 @@ function passwordGenerator(){
     return password
 }
 
+function copyToClipboard(passwordButton){
+    const passwordText = document.getElementById(passwordButton).textContent
+    navigator.clipboard.writeText(passwordText)
+        .then(()=>{
+            showNotification("Password copied to Clipboard")
+        })
+        .catch(err => {
+            console.error("Failed to copy password: ", err);
+            showNotification("Failed to copy password", true)
+        })
+    console.log(passwordText)
+}
+
+function showNotification(message, isError = false){
+    const notification = document.getElementById("notification");
+    notification.textContent = message;
+    notification.style.backgroundColor = isError ? "#FF5C5C" : "#55F991";
+    notification.style.display ="block";
+
+    setTimeout(()=>{
+        notification.style.display = "none";
+    }, 3000)
+}
 
 
